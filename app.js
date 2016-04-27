@@ -14,7 +14,7 @@ app.get('/players/:name/:lang',function(req,res){
 	res.end("  Language = " + req.params.lang);
 });
 
-var port = process.env.npm_package_config_port || 1234;
+var port = process.env.PORT || 1234;
 
 app.listen(port,function(){
 	console.log("tis sever is listening on port " + port);
